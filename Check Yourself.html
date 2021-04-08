@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Yourself!</title>
+</head>
+<style scoped>
+    body{
+        text-align: left;
+    }
+    .conatiner{
+        margin: 200px 50px;
+        background: rgb(255, 254, 254);
+    }
+    .prog{
+        width: 500px;
+        background: rgb(189, 177, 177);
+    }
+    .progs{
+        width: 10%;
+        height: 50px;
+        background: rgb(225, 149, 240);
+        color:#fff;
+        text-align: center;
+        line-height: 50px;
+    }
+
+</style>
+<body>
+    <div class="conatiner">
+    <h2>How Much Do You Believe
+<br><strong>In Yourself?</strong></h2>
+    <div class="prog">
+        <div class="progs" id="progressing">5%</div>
+    </div>
+    <button onClick="moveBtn()">Check Yourself!</button>
+    <br>
+    </div>
+    <script>
+        function moveBtn(){
+            var ele=document.getElementById('progressing');
+            var width = 5;
+            var id =setInterval(frame, 45);
+            function frame(){
+                if(width>=100){
+                    clearInterval(id);
+                }else{
+                    width ++;
+                    ele.style.width=width+"%";
+                    ele.innerHTML=width+"%";
+                }
+            }
+        }
+    </script>
+<P>
+    Wooow! Awesome!
+</P>
+<P>
+    무엇을 하든, 언제 시작하든
+    <br>
+    가장 중요한 건 단 하나.
+<p style="margin-top:45px;">
+    <strong><i><font color="#C1250F">
+    "나 스스로 지지할 것."
+    </font></i></strong>
+</p>
+<p>
+    문득,
+    <br>
+    나를 토닥여주고 싶다면,
+    <br>
+    언제나 여기에서 '<strong>Check</strong>'하세요!
+</p>
+<p>
+    A.N.D
+  </br>
+    그리고
+  </br>
+    Never ever FORGET.
+  </br>
+    절대로 잊지말아요.
+</p>
+<p>
+  <strong><font color="#f0a4ab">그대, 지금 이순간도 충분히 빛난다는 걸요 :)</font></strong>
+</p>
+<p>
+  자, 이제 정말로 시작해볼까?
+  <br>
+  Alright! <strong>Let's <u>TRY</u> it!</strong>
+</p>
+
+<ul>
+  <li><a href="index.html" target="_blank">Back button</a></li>
+</ul>
+
+</body>
+</html>
